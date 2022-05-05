@@ -34,8 +34,9 @@ if __name__ == "__main__":
     for i in range(35,45):
         lst_i_c.append(i)
         start = pc()
-        Integer(i)
-        end = pc()
+        f=Integer(i)
+	f.fib()
+	end = pc()
         lst_time_c.append(round(end-start, 4))
         print("Process took {} seconds in C++ for i  {}".format(round(end-start, 4),i))
 
